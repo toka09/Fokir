@@ -2,6 +2,7 @@
 
 Welcome to my **Assignment 4** repository! This project is part of my current course at **Route Academy**. In this assignment, I built a simple yet elegant webpage using **HTML** and **CSS**. Below is a breakdown of the sections included in this project:
 <br>
+![Homepage Screenshot](./images/Screenshot.png)
 
 ---
 
@@ -38,4 +39,4 @@ Welcome to my **Assignment 4** repository! This project is part of my current co
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/assignment-4.git
+   git clone https://git@github.com:toka09/Fokir.git
