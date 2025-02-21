@@ -1,195 +1,296 @@
-@property --num {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-}
-.counter-item-value::after{
-    content: counter(num);
-}
-@keyframes counter {
-    from {
-    --num: 0;
-    }
-    to {
-    --num: 200;
-    }
-}
-@media screen and (max-width: 768px) {
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        padding: 2.5% 5%;
-        position: relative;
-    }
-    .navbar-menu{
-        visibility: visible;
-        width: 30px;
-        height: 20px;
-        aspect-ratio: 1;
-        appearance:none;
-        cursor:pointer;
-        position: absolute;
-        right: 5%;
-        top: 30%;
-        transition: 0.5s;
-    }
-    .navbar-ul{
-        top: 100%;
-        left: 5%;
-        right: 5%;
-        width: 90vw;
-        margin: auto;
-        background-color: #555555;
-        position: absolute;
-        text-align: center;
-        visibility: hidden;
-    }
-    .navbar-list{
-        display: flex;
-        flex-direction: column;
-    }
-    .navbar-list-item{ padding: 15px 0;}
+/* <!-- For Mobiles -->  */
 
-    .navbar-menu:checked + .navbar-ul{
-        visibility: visible;
-        z-index: 100;
+@media screen and (min-width:200px) and (max-width:500px) {
+
+/* First section */
+
+    .home{
+        height: 70vh;
     }
-    .caption h2{
-        font-size: 1rem;
+    .navigator{
+    background-color: rgba(0, 0, 0, 0.904);
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
     }
-    .caption h1{
-        font-size: 2.5rem;
+    .logo{
+        width: 10%;
+        float: left;
+        padding-top:22px ;
+        padding-left:20px;
     }
-    .caption h3{
-        font-size: 1.2rem;
-        font-weight: bold;
+    .home ul{
+        text-align: center;
     }
-    #about{
-        height: max-content;
-        padding: 20px 0;
-        margin: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+    .logo a{
+        color: #FF305B;
+        font-weight: 800;
+        font-size: 20px;
+        text-decoration: none;
     }
-    .about-image-border{
-        border: none;
+    .links{
+        width: 90%;
+        float: right;
+        padding-right:0px;
+        margin-left:0px;
+    }
+    .links a{
+        padding:0px 4px;
+        font-size: 9px;
+    }
+    .home-cont h1{
+        font-size: 50px;
+
+    }
+    .home-cont h3{ 
+        font-size: 25px; 
+    }
+    .home-cont h4{
+        font-size: 20px;
+    }
+/* ------------------------------- */
+/* Section two */
+
+    .about{
+        margin-top:20px;
+        margin-bottom:20px;
     }
     .about-image{
-        margin-bottom: 5%;
+        width:100%;
+        float: left;
+        padding-left:70px;
+        position: relative;
     }
-    .about-img{
-        width: 80%;
-        justify-content: space-evenly;
-        flex-direction: column;
+    .back-border{
+        width:80%;
+        height:100%;
+        position: absolute;
+        bottom: 20px;
+        left: 35px;
     }
-    .about-img img{
-        width: 100%;
+    .about-image img{
+        width: 90%;
+        height: 100%;
+        border-radius: 10px;
     }
-    .about-caption{
-        width: 80%;
-        margin: auto;
-        margin-top: 10%;
+    .about-image .layer{
+        width:90%;
+        height:100%;
     }
-    .info-list{
-        flex-direction: column;
+    .about-cont{
+        width:100%;
     }
-    .about-list{
-        margin: 0;
+    .about-cont h2{
+        margin: 20px 0px 0px 0px;
     }
-    #service{
-        height: max-content;
-        padding: 20px;
-        flex-direction: column;
+    .about-cont p{
+        line-height: 1.2;
     }
-    .service-ul{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .shape{
+        width: 4px;
+        height: 23px;
     }
-    .service-list-item{
-        width: 60%;
+    .list1{
+        display: inline-block;
+        list-style: none;
+        padding:0px 0px;
+        margin-right:50px;
+    }
+    .list1 li{
+        font-family: 'Roboto', sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        color: #555555;
+        padding: 10px 0px;
+    }
+    .list2 li{
+        font-size: 14px;
+    }
+    .list2 a{
+        font-size: 14px;    
+    }
+    .about-cont button{
+    font-size: 12px;
+    }
+/* ------------------------------- */
+/* Section Three */
+
+    .services{
+        margin-top:20px;
         margin-bottom: 20px;
     }
-    #portfolio{
-        height: fit-content;
-    }
-    .portfolio-image-list{
-        flex-direction: column;
-        align-items: center;
-    }
-    .portfolio-list-item{
-        padding: 10px;
-    }
-    .portfolio-image-list-item{
-        position: relative;
-        margin: 10px;
-        padding: 0;
-        width: 70%;
-    }
-    .portfolio-image-list-item img{
+    .services .serv{
         width: 100%;
+
     }
-    .portfolio-image-cover{
-        opacity: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
+    .serv p{
+        font-size: 15px;
     }
-    #counter{
-        padding: 20px;
-        height: fit-content;
-        flex-direction: column;
+/* ------------------------------- */
+/* Section Four */
+    .portofolio{
+        margin-top:20px;
+        margin-bottom: 20px;
     }
-    .counter-item{
-        margin: 20px;
+    .portofolio button{
+        margin: 25px 5px 30px 15px;
     }
-    #testimonial{
-        justify-content: flex-start;
-        margin-top: 15%;
-    }
-    .test-card-container{
-        position: relative;
-    }
-    .test-card, .test-card-abs{
-        position: absolute;
-        flex-direction: column;
-        padding: 5%;
-    }
-    .test-image{
-        width: 40%;
-    }
-    .test-swipe, .test-swipe2{
-        position: absolute;
-        top: 450px;
-    }
-    #blog{
-        padding: 5%;
-        height: fit-content;
-    }
-    .blog-list{
-        flex-direction: column;
-    }
-    .blog-list-item{
-        margin: 20px;
-        width: 70%;
-    }
-    .form-list-item-first{
-        flex-direction: column;
-    }
-    .form-button{
+    .item{
         width: 50%;
+        float: left;
+        padding: 10px 10px;
     }
+/* ------------------------------- */
+/* Section 5 */
+    .numbers{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .result{
+        width: 50%;
+        float: left;
+        padding: 10px 10px;
+    }
+/* ------------------------------- */
+/* Section Six */
+
+    .testimonial{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .card{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .card-image{
+        width: 30%;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+    .card-image img{
+        width: 70%;
+        z-index: 100;
+        margin-top: 10px;
+    }
+    .card-cont{
+        width: 70%;
+        float: left;
+        padding-left: 0px;
+    }
+    .card-cont h3{
+        font-size: 25px; 
+    }
+    .card-cont h4{
+        font-size: 12px;
+       
+    }
+    .card-cont p{
+        font-size: 15px;
+        line-height: 1.2;
+    }
+    .stars i{
+        font-size: 12px;
+    }
+    .card .design{
+      z-index: -100;
+    }
+/* ------------------------------- */
+    /* Section Seven */
+.blog{
+    margin-top:20px;
+    margin-bottom:20px;
 }
-@keyframes typing {
-    40%, 60%{left: calc(100% + 30px);} 100% {left: 0;}
+
+.bl{
+    width: 100%;
+    float: left;
+    padding: 15px 0px ;
 }
-@keyframes slide{ 100% { top: -70px;}
+.in{
+    background-color: #ffffff;
+    padding-bottom: 25px;
 }
-@keyframes slideLeft {
-    0%{ right: 0;}
-    50% { right: 5%;}
-    100%{ right: 0;}
+.bl img{
+    width: 100%;
 }
+.bl iframe{
+    width: 100%;
+}
+.bl h4{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    padding-left: 15px;
+    margin: 20px 0px 10px 0px;
+}
+.bl h3{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    padding-left: 15px;
+    margin: 5px 0px;
+}
+.bl p{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.bl a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 15px;
+    transition: color 1s;
+}
+.bl:hover a{
+    color: #FF3F67;
+}
+/* ------------------------------- */
+/* Section Eight */
+    .contact{
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .contact h2{
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        color: #333333;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+    .parent{
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .input1{
+        width: 100%;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 5px;
+        border: #cdcdcd solid 2px;
+        margin-bottom: 20px;
+    }
+    .input2{
+        width:100%;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 5px;
+        border: #cdcdcd solid 2px;
+    }
+        }
