@@ -1,274 +1,178 @@
-@media screen and (min-width:200px) and (max-width:500px) {
-    .home{
-        height: 70vh;
+@media screen and (max-width: 767px) {
+    .section-title h2 {
+    font-size: 32px;
     }
-    .navigator{
-    background-color: rgba(0, 0, 0, 0.904);
-    position: fixed;
+}
+@media screen and (max-width: 900px) {
+    .nav-btn {
+    display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slider-area .slider-text h1 {
+    font-size: 40px;
+    }
+    .slider-area .slider-text p {
+    font-size: 20px;
+    }
+} 
+@media screen and (min-width: 871px) and (max-width: 991px) {
+    .about .left {
+    width: 50%;
+    text-align: center;
+    }
+    .about .right {
+    width: 50%;
+    }
+    .about .left .inner,
+    .about .right .inner {
+    padding-inline: 0px;
+    }
+    .about .left .about-img {
+    position: relative;
+    border: none;
     width: 100%;
-    z-index: 999999;
     }
-    .logo{
-        width: 10%;
-        float: left;
-        padding-top:22px ;
-        padding-left:20px;
+    .about .left .about-img img {
+    width: 100%;
+    transform: translateY(0) translateX(0);
     }
-    .home ul{
-        text-align: center;
+    .about .left .social-icon {
+    transform: translateY(0) translateX(0);
     }
-    .logo a{
-        color: #FF305B;
-        font-weight: 800;
-        font-size: 20px;
-        text-decoration: none;
+    .about .right h2 {
+    margin-bottom: 10px;
     }
-    .links{
-        width: 90%;
-        float: right;
-        padding-right:0px;
-        margin-left:0px;
+    .about .right p {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     }
-    .links a{
-        padding:0px 4px;
-        font-size: 9px;
+    .about .list-left {
+    width: 50%;
     }
-    .home-cont h1{
-        font-size: 50px;
-
+    .about .list-right {
+    width: 50%;
     }
-    .home-cont h3{ 
-        font-size: 25px; 
+    .about .about-list,
+    .about .about-list a {
+    margin-bottom: 10px;
+    line-height: 15px;
+    font-size: 14px;
+    text-wrap: nowrap;
     }
-    .home-cont h4{
-        font-size: 20px;
-    }
-    .about{
-        margin-top:20px;
-        margin-bottom:20px;
-    }
-    .about-image{
-        width:100%;
-        float: left;
-        padding-left:70px;
-        position: relative;
-    }
-    .back-border{
-        width:80%;
-        height:100%;
-        position: absolute;
-        bottom: 20px;
-        left: 35px;
-    }
-    .about-image img{
-        width: 90%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .about-image .layer{
-        width:90%;
-        height:100%;
-    }
-    .about-cont{
-        width:100%;
-    }
-    .about-cont h2{
-        margin: 20px 0px 0px 0px;
-    }
-    .about-cont p{
-        line-height: 1.2;
-    }
-    .shape{
-        width: 4px;
-        height: 23px;
-    }
-    .list1{
-        display: inline-block;
-        list-style: none;
-        padding:0px 0px;
-        margin-right:50px;
-    }
-    .list1 li{
-        font-family: 'Roboto', sans-serif;;
-        font-size: 14px;
-        font-weight: 400;
-        color: #555555;
-        padding: 10px 0px;
-    }
-    .list2 li{
-        font-size: 14px;
-    }
-    .list2 a{
-        font-size: 14px;    
-    }
-    .about-cont button{
-    font-size: 12px;
-    }
-    .services{
-        margin-top:20px;
-        margin-bottom: 20px;
-    }
-    .services .serv{
-        width: 100%;
-
-    }
-    .serv p{
-        font-size: 15px;
-    }
-    .portofolio{
-        margin-top:20px;
-        margin-bottom: 20px;
-    }
-    .portofolio button{
-        margin: 25px 5px 30px 15px;
-    }
-    .item{
-        width: 50%;
-        float: left;
-        padding: 10px 10px;
-    }
-    .numbers{
-        margin-top:20px;
-        margin-bottom: 20px;
-    }
-    .result{
-        width: 50%;
-        float: left;
-        padding: 10px 10px;
-    }
-    .testimonial{
-        margin-top:20px;
-        margin-bottom: 20px;
-    }
-    .card{
-        width: 100%;
-        padding-top: 10px;
-    }
-    .card-image{
-        width: 30%;
-        padding-left: 0px;
-        padding-top: 0px;
-        margin-left: 0px;
-    }
-    .card-image img{
-        width: 70%;
-        z-index: 100;
-        margin-top: 10px;
-    }
-    .card-cont{
-        width: 70%;
-        float: left;
-        padding-left: 0px;
-    }
-    .card-cont h3{
-        font-size: 25px; 
-    }
-    .card-cont h4{
-        font-size: 12px;
-       
-    }
-    .card-cont p{
-        font-size: 15px;
-        line-height: 1.2;
-    }
-    .stars i{
-        font-size: 12px;
-    }
-    .card .design{
-      z-index: -100;
-    }
-.blog{
-    margin-top:20px;
-    margin-bottom:20px;
 }
 
-.bl{
+@media screen and (max-width: 870px) {
+    .about .left {
     width: 100%;
-    float: left;
-    padding: 15px 0px ;
-}
-.in{
-    background-color: #ffffff;
-    padding-bottom: 25px;
-}
-.bl img{
+    text-align: center;
+    }
+    .about .right {
     width: 100%;
-}
-.bl iframe{
+    }
+    .about .left .inner,
+    .about .right .inner {
+    padding-inline: 0px;
+    }
+    .about .left .about-img {
+    position: relative;
+    border: none;
     width: 100%;
-}
-.bl h4{
-    font-family: 'Roboto', sans-serif;;
-    font-size: 16px;
-    font-weight: 400;
-    color: #555555;
-    padding-left: 15px;
-    margin: 20px 0px 10px 0px;
-}
-.bl h3{
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #333333;
-    padding-left: 15px;
-    margin: 5px 0px;
-}
-.bl p{
-    font-family: 'Roboto', sans-serif;;
-    font-size: 16px;
-    font-weight: 400;
-    color: #555555;
-    padding-left: 15px;
     margin-bottom: 20px;
-    line-height: 1.5;
+    }
+    .about .left .about-img img {
+    width: 100%;
+    transform: translateY(0) translateX(0);
+    }
+    .about .left .social-icon {
+    transform: translateY(0) translateX(0);
+    }
+    .about .list-left,
+    .about .list-right {
+    width: 100%;
+    }
+    .about .download-cv-btn a {
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 8px 20px;
+    }
+}   
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .services .single-ser {
+    width: 50%;
+    }
 }
-.bl a{
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;;
-    font-size: 16px;
-    font-weight: 400;
-    color: #333333;
-    padding-left: 15px;
-    transition: color 1s;
+@media screen and (max-width: 768px) {
+    .services .single-ser {
+    width: 100%;
+    }
+} 
+@media screen and (max-width: 767px) {
+    .portfolio .portfolio-menu button {
+    font-size: 12px;
+    padding: 3px 5px;
+    font-weight: 600;
+    }
+    .portfolio-works .portfolio-card {
+    width: 100%;
+    }
 }
-.bl:hover a{
-    color: #FF3F67;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .portfolio-works .portfolio-card {
+    width: 50%;
+    }
 }
-    .contact{
-        margin-top:20px;
-        margin-bottom: 20px;
+@media screen and (max-width: 767px) {
+    .facts .fact-card {
+    width: 100%;
     }
-    .contact h2{
-        font-family: 'Source Sans 3', sans-serif;
-        font-size: 40px;
-        font-weight: 800;
-        color: #333333;
-        margin-bottom: 1px;
-        text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .feedback-card {
+    width: 100%;
+    padding: 20px;
     }
-    .parent{
-        width: 90%;
-        height: 400px;
-        margin: auto;
-        margin-top: 50px;
+    .feedback-card::before {
+    top: -20px;
     }
-    .input1{
-        width: 100%;
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;;
-        font-size: 14px;
-        font-weight: 400;
-        border-radius: 5px;
-        border: #cdcdcd solid 2px;
-        margin-bottom: 20px;
+    .feedback-card .feedback-avatar {
+    float: none;
+    margin: 12px auto;
     }
-    .input2{
-        width:100%;
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;;
-        font-size: 14px;
-        font-weight: 400;
-        border-radius: 5px;
-        border: #cdcdcd solid 2px;
+    .feedback-card .feedback-body {
+    padding-left: 0;
     }
-        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .feedback-card {
+    width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .form-user-data .form-input {
+    width: 100%;
+    display: block;
+    }
+    .contact form {
+    width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .contact form {
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .blog-cards .blog-card {
+    width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .blog-cards .blog-card {
+    width: 50%;
+    }
+}

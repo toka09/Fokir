@@ -1,298 +1,361 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fokir</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <title>Fokir</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div class="home">
-        <div class="navigator">
-            <div class="logo"><a href="">Fokir</a></div>
-            <div class="links">
-            <ul>
-                <li><a href="#"><span style="color: #FF305B;">Home</span></a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>   
+    <div id="header" class="header ">
+        <div class="container d-flow-root ">
+            <h2 class="logo"><a href="#">Fokir</a></h2>
+            <button id="nav-btn" class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+            <ul id="navbar" class="navbar">
+                <li><a class="nav-link active" href="#home">home</a></li>
+                <li><a class="nav-link" href="#about">about</a></li>
+                <li><a class="nav-link" href="#services">services</a></li>
+                <li><a class="nav-link" href="#portfolio">portfolio</a></li>
+                <li><a class="nav-link" href="#testimonial">testimonial</a></li>
+                <li><a class="nav-link" href="#blog">blog</a></li>
+                <li><a class="nav-link" href="#contact">contact</a></li>
             </ul>
-            </div>
-            <div class="clear"></div>
-        </div>
-        
-        <div class="home-cont">
-                <h3>Hello i'm</h3>
-                <h1>Toka Elqersh</h1>
-                <h4>Professional Web </h4>
         </div>
     </div>
-    <br/><br/>
-    <div class="about" id="about">
-        <div class="container">
-            <div class="about-image">
-                <div class="back-border"></div>
+    <div id="home" class="slider-area">
+        <div class="overlay ">
+            <div class="container d-flow-root ">
+                <div class="slider-text">
+                    <h3>Hello i'am</h3>
+                    <h1>alex smith</h1>
+                    <p>professional Web
+                        <span id="animated-text" class="animated-text"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about padding-block-80">
+        <div class="container d-flow-root">
+            <div class="left">
                 <div class="inner">
-                    <img src="images/about.jpg"/>
-                    <div class="layer">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-google"></i>
-                        <i class="fa-brands fa-github"></i>
-                    </div> 
+                    <div class="about-img">
+                        <img src="images/about.jpg" alt="">
+                        <div class="porfile-overly">
+                            <div class="social-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="about-cont">
-                <div class="shape"></div>
-                <h2>HELLO,</h2>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
-                <ul class="list1">
-                    <li><span><b>Name:</b></span> Rdam smith</li>
-                    <li><span><b>Age:</b></span> 26 Year</li>
-                    <li><span><b>Freelance:</b></span> Available</li>
-                </ul>
-                <ul class="list2">
-                    <li><span><b>Job Title:</b></span> UI/UX Designe</li>
-                    <li><span><b>Location:</b></span> United States, US</li>
-                    <li><span><b>E-mail:</b></span> <a href="#">example@gmail.com</a></li>
-                </ul>
-                <button>Download CV &nbsp;<i class="fa-solid fa-download"></i></button>
-                <button>Hire Me &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+            <div class="right ">
+                <div class="inner ">
+                    <h2>Hello,</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <div class="profile-about ">
+                        <ul class=" d-flow-root">
+                            <li class="about-list list-left"><span>Name:</span> Rdam smith</li>
+                            <li class="about-list list-right"><span>Job Title:</span> UI/UX Designer</li>
+                            <li class="about-list list-left"><span>Age:</span> 26 Year</li>
+                            <li class="about-list list-right"><span>Location:</span> United States, US</li>
+                            <li class="about-list list-left"><span>Freelance:</span> Available</li>
+                            <li class="about-list list-right"><span>E-mail:</span> <a href="#">example@gmail.com</a>
+                            </li>
+                        </ul>
+                        <div class="download-cv-btn">
+                            <a href="#">Download CV <i class="fa fa-download"></i> </a>
+                            <a href="#contact" class="hire-me">Hire Me <i class="fa fa-paper-plane"></i> </a>
+                        </div>
+                    </div>
                 </div>
-            <div class="clear"></div>
+            </div>
         </div>
     </div>
-    <br/><br/>
-    <div class="services" id="services">
+    <div id="services" class="services padding-block-80">
         <div class="container">
-
-            <h2>Our Services</h2>
-            <div class="shape1"></div>
-            <div class="shape2"></div>
-            <div class="shape3"></div>
-        
-            <div class="serv">
-                <i class="fa-solid fa-pen-ruler"></i>
-                <h3>UI/UX DESIGN</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+            <div class="section-title">
+                <h2>Our Services</h2>
             </div>
-            <div class="serv">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3>APP DEVELOPMENT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
+            <div class="service-cards d-flow-root">
+                <div class=" single-ser">
+                    <div class="inner">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <h3>UI/UX DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis
+                            necstatibus.</p>
+                    </div>
+                </div>
+                <div class="single-ser">
+                    <div class="inner">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>APP DEVELOPMENT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis
+                            necstatibus.</p>
+                    </div>
+                </div>
+                <div class="single-ser">
+                    <div class="inner">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <h3>PRODUCT DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis
+                            necstatibus.</p>
+                    </div>
+                </div>
+                <div class="single-ser">
+                    <div class="inner">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>UI/UX DESIGN</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis
+                            necstatibus.</p>
+                    </div>
+                </div>
             </div>
-            <div class="serv">
-                <i class="fa-regular fa-window-maximize"></i>
-                <h3>PRODUCT DESIGN</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-            </div>
-            <div class="serv">
-                <i class="fa-solid fa-gears"></i>
-                <h3>UI/UX DESIGN</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
-            </div>      
-            <div class="clear"></div>
         </div>
     </div>
-
-    <br/>
-
-    <div class="portofolio" id="portofolio">
+    <div id="portfolio" class="portfolio padding-block-80">
         <div class="container">
-
-            <h2>Our Portfolio</h2>
-            <div class="shape1"></div>
-            <div class="shape2"></div>
-            <div class="shape3"></div>
-
-            <div>
-            <button><span style="color: #FF305B;">ALL</span></button>
-            <button>GRAPHIC</button>
-            <button>WEB DESIGN</button>
-            <button>BRANDING</button>
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
             </div>
-
-            <div class="item">
-                <div class="inneer">
-                    <img src="images/portfolio/1.jpg"/>
-                    <div class="layeer"></div>
+            <div class="portfolio-menu">
+                <button data-filter="*" class="btn-portfolio active">ALL</button>
+                <button data-filter=".cat1" class="btn-portfolio">Graphic</button>
+                <button data-filter=".cat2" class="btn-portfolio">Web Design</button>
+                <button data-filter=".cat3" class="btn-portfolio">Branding </button>
+            </div>
+            <div class="portfolio-works d-flow-root">
+                <div class="portfolio-card">
+                    <div class="inner">
+                        <img src="images/portfolio/1.jpg" alt="project 1 web">
+                        <div class="portfolio-view">
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="inner">
+                        <img src="images/portfolio/2.jpg" alt="project 2 web">
+                        <div class="portfolio-view">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="inner">
+                        <img src="images/portfolio/3.jpg" alt="project 3 app">
+                        <div class="portfolio-view">
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="inner">
+                        <img src="images/portfolio/4.jpg" alt="project 4 app">
+                        <div class="portfolio-view">
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="inner">
+                        <img src="images/portfolio/5.jpg" alt="project 5 UI">
+                        <div class="portfolio-view">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="inner">
+                        <img src="images/portfolio/6.jpg" alt="project 6 UI">
+                        <div class="portfolio-view">
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="inneer">
-                    <img src="images/portfolio/2.jpg"/>
-                    <div class="layeer"></div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="inneer">
-                    <img src="images/portfolio/3.jpg"/>
-                    <div class="layeer"></div>
-                </div>
-            </div> 
-            <div class="item">
-                <div class="inneer">
-                    <img src="images/portfolio/4.jpg"/>
-                    <div class="layeer"></div>
-                </div>
-            </div> 
-            <div class="item">
-                <div class="inneer">
-                    <img src="images/portfolio/5.jpg"/>
-                    <div class="layeer"></div>
-                </div>
-            </div> 
-            <div class="item">
-                <div class="inneer">
-                    <img src="images/portfolio/6.jpg"/>
-                    <div class="layeer"></div>
-                </div>
-            </div>
-
-            <div class="clear"></div>
-
         </div>
     </div>
-
-    <br/><br/>
-
-    <div class="numbers">
-
+    <div id="facts" class="facts padding-block-80">
+        <div class="container d-flow-root">
+            <div class="fact-card">
+                <div class="inner">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="single-counter">
+                        <h3 class="counter" data-target="200">0</h3>
+                        <h5>Team members</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="inner">
+                    <i class="fa-solid fa-file-code"></i>
+                    <div class="single-counter">
+                        <h3 class="counter" data-target="345">0</h3>
+                        <h5>Complete Projects</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="inner">
+                    <i class="fa-solid fa-download"></i>
+                    <div class="single-counter">
+                        <h3 class="counter" data-target="1800">0</h3>
+                        <h5>Files Downloaded</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="inner">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <div class="single-counter">
+                        <h3 class="counter" data-target="1200">0</h3>
+                        <h5>Lines Of Code</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testimonial" class="testimonial padding-block-80">
         <div class="container">
-
-            <div class="result">
-                <i class="fa-solid fa-users"></i>
-                <h3>148</h3>
-                <h5>Team members</h5>
+            <div class="section-title">
+                <h2>Client's Feedback</h2>
             </div>
-            <div class="result">
-                <i class="fa-regular fa-copy"></i>
-                <h3>258</h3>
-                <h5>Complete Projects</h5>
+            <div class="feedback-cards">
+                <div class="feedback-card d-flow-root">
+                    <div class=" feedback-avatar">
+                        <img src="images/feedback2.jpg" alt="Alex Ander avatar">
+                    </div>
+                    <div class="feedback-body">
+                        <h3>Alex ander</h3>
+                        <h4><a href="#"><i class="fa-solid fa-location-dot"></i> United</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni
+                            sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem
+                            adipisicing elit.</p>
+                        <div class="review-reating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination d-flow-root">
+                    <div class=" polit active"></div>
+                    <div class="polit"></div>
+                </div>
             </div>
-            <div class="result">
-                <i class="fa-solid fa-cloud-arrow-down"></i>
-                <h3>1350</h3>
-                <h5>Files Downloaded</h5>
-            </div>
-
-            <div class="result">
-                <i class="fa-solid fa-mug-saucer"></i>
-                <h3>900</h3>
-                <h5>Lines Of Code</h5>
-            </div>
-
-            <div class="clear"></div>
-
         </div>
-
     </div>
-    
-    <br/>
-    <div class="testimonial" id="testimonial">
+    <div id="blog" class="blog padding-block-80">
         <div class="container">
-            <h2>Client's Feedback</h2>
-            <div class="shape1"></div>
-            <div class="shape2"></div>
-            <div class="shape3"></div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/feedback.jpg"/>
-                </div>
-                <div class="card-cont">
-                   <h3>Alex ander</h3>
-                   <h4><i class="fa-solid fa-location-dot"></i> United</h4>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem adipisicing elit.</p>
-                   <div class="stars">
-                   <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                </div>
-                <div class="card-image">
-                    <img src="images/feedback2.jpg"/>
-                </div>
-                <div class="card-cont">
-                   <h3>Alex ander</h3>
-                   <h4><i class="fa-solid fa-location-dot"></i> United</h4>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem adipisicing elit.</p>
-                   <div class="stars">
-                   <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                </div>
-               <div class="clear"></div>
-               <div class="design"></div>
+            <div class="section-title">
+                <h2>Our Blog</h2>
             </div>
-            <button class="tb1"></button> <button class="tb2"></button>
+            <div class="blog-cards d-flow-root">
+                <div class=" blog-card">
+                    <div class="inner">
+                        <div class="post-thumbnail">
+                            <a href="#"><img src="images/blog/12.jpg" alt="web design Blog image"></a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta"> 23 November, 2015</div>
+                            <h3><a href="blog-details.html">web design Blog Post</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam
+                                deserunt eius incidunt repellat molestiae.</p>
+                            <div class="post-read">
+                                <a href="#">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="inner">
+                        <div class="post-thumbnail">
+                            <iframe src="https://www.youtube.com/embed/uVju5--RqtY"
+                                title="Envato - Bringing Ideas to Life" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta"> 20 April, 2018</div>
+                            <h3><a href="blog-details.html">Development Blog Post</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam
+                                deserunt eius incidunt repellat molestiae.</p>
+                            <div class="post-read">
+                                <a href="#">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="inner">
+                        <div class="post-thumbnail">
+                            <a href="#"><img src="images/blog/32.jpg" alt="Full Width Blog Post image"></a>
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta"> 17 May, 2017</div>
+                            <h3><a href="blog-details.html">Full Width Blog Post</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam
+                                deserunt eius incidunt repellat molestiae.</p>
+                            <div class="post-read">
+                                <a href="#">READ MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <br/><br/>
-    <div class="blog" id="blog">
+    <div id="contact" class="contact padding-block-80">
         <div class="container">
-            <h2>Our Blog</h2>
-            <div class="shape1"></div>
-            <div class="shape2"></div>
-            <div class="shape3"></div>
-            <div class="bl">
-                <div class="in">
-                    <img src="images/blog/12.jpg"/>
-                    <h4>23 November, 2015</h4>
-                    <h3>Web design Blog Post</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
-                    <a href="">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+            <div class="section-title">
+                <h2>Contact us</h2>
             </div>
-
-            <div class="bl">
-                <div class="in">
-                    <iframe width="560" height="194" src="https://www.youtube.com/embed/uVju5--RqtY?si=8TFjB7Xi-8wmbog9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <h4>20 April, 2018</h4>
-                    <h3>Development Blog Post</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
-                    <a href="">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+            <form action="">
+                <div class="form-user-data d-flow-root">
+                    <input class="form-input name" type="text" name="fName" placeholder="Name" required>
+                    <input class="form-input email" type="email" name="email" placeholder="Email" required>
                 </div>
-            </div>
-            <div class="bl">
-                <div class="in">
-                    <img src="images/blog/32.jpg"/>
-                    <h4>17 May, 2017</h4>
-                    <h3>Full Width Blog Post</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
-                    <a href="">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    <br/>
-    <div class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <div class="shape1"></div>
-        <div class="shape2"></div>
-        <div class="shape3"></div>
-        <div class="parent">
-            <form>
-                <input class="input1" placeholder="Name" name="userName" type="text" required/>
-                <input class="input2" placeholder="Email" name="userMail" type="mail" required/>
-                <input class="input3" placeholder="Subject" name="userSubject" type="text" required/>
-                <br/>
-                <textarea class="input4" placeholder= " Message for me" required></textarea>
-                <br/>
-                <button type="submit">SEND MESSAGE</button>
+                <input class="form-input subject" type="text" name="subject" placeholder="Subject" required>
+                <textarea class="form-textarea" name="message" id="message" placeholder="Message"></textarea>
+                <input class="form-btn" type="submit" value="Send message" disabled>
             </form>
         </div>
     </div>
-    <div class="footer">
-        <div class="container">
-            <div class="ending end-links">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-google"></i></a>
-                <a href=""> <i class="fa-brands fa-github"></i></a>
-            </div>
-            <div class="ending theme">
-                <p>Copy Right 2018 © By <a href="">Theme-fair</a> All Rights Reserved</p>
-            </div>
+
+    <!-- ?==>Start footer -->
+    <div id="footer" class="footer">
+        <div class="container d-flow-root">
+            <ul class="footer-social-icon">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+            <p class="copy-right">Copy Right 2018 © By <a href="#">Theme-fair</a> All Rights Reserved</p>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
