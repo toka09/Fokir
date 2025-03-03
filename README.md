@@ -3,7 +3,7 @@
 Welcome to my **Assignment 4** repository! This project is part of my current course at **Route Academy**. In this assignment, I built a simple yet elegant webpage using **HTML** and **CSS**. Below is a breakdown of the sections included in this project:
 <br>
 <br>
-![Homepage Screenshot](./images/Screenshot.png)
+![Homepage Screenshot](/images/Screenshot1.png)
 
 ---
 
