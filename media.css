@@ -1,9 +1,4 @@
-/* <!-- For Mobiles -->  */
-
 @media screen and (min-width:200px) and (max-width:500px) {
-
-/* First section */
-
     .home{
         height: 70vh;
     }
@@ -48,9 +43,6 @@
     .home-cont h4{
         font-size: 20px;
     }
-/* ------------------------------- */
-/* Section two */
-
     .about{
         margin-top:20px;
         margin-bottom:20px;
@@ -112,9 +104,6 @@
     .about-cont button{
     font-size: 12px;
     }
-/* ------------------------------- */
-/* Section Three */
-
     .services{
         margin-top:20px;
         margin-bottom: 20px;
@@ -126,8 +115,6 @@
     .serv p{
         font-size: 15px;
     }
-/* ------------------------------- */
-/* Section Four */
     .portofolio{
         margin-top:20px;
         margin-bottom: 20px;
@@ -140,8 +127,6 @@
         float: left;
         padding: 10px 10px;
     }
-/* ------------------------------- */
-/* Section 5 */
     .numbers{
         margin-top:20px;
         margin-bottom: 20px;
@@ -151,9 +136,6 @@
         float: left;
         padding: 10px 10px;
     }
-/* ------------------------------- */
-/* Section Six */
-
     .testimonial{
         margin-top:20px;
         margin-bottom: 20px;
@@ -195,8 +177,6 @@
     .card .design{
       z-index: -100;
     }
-/* ------------------------------- */
-    /* Section Seven */
 .blog{
     margin-top:20px;
     margin-bottom:20px;
@@ -254,8 +234,6 @@
 .bl:hover a{
     color: #FF3F67;
 }
-/* ------------------------------- */
-/* Section Eight */
     .contact{
         margin-top:20px;
         margin-bottom: 20px;
